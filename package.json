@@ -1,0 +1,29 @@
+{
+  "name": "payfast",
+  "version": "1.0.0",
+  "description": "um gateway para pagamentos atraves de recursos http.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gateway",
+    "pagamentos",
+    "api"
+  ],
+  "author": "Thiago",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.0",
+    "mysql": "^2.16.0",
+    "npm": "^6.4.1",
+    "restify": "^7.2.1",
+    "restify-clients": "^2.6.2",
+    "restify-plugins": "^1.6.0",
+    "soap": "^0.25.0"
+  }
+}
