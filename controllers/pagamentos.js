@@ -16,8 +16,8 @@ module.exports = function(app){
         console.log(pagamento);
 
         req.assert("pagamento.forma_pagamento", "Forma de pagamento é obrigatório").notEmpty();
-        req.assert("pagamento.valor", "Valor eh obrigatorio e deve ser um decimal").notEmpty().isFloat();
-        req.assert("pagamento.moeda", "Moeda é obrigatória e deve ter 3 caracteres").notEmpty().len(3,3);
+        req.assert("pagamento.valor", "Valor é obrigatorio e deve ser um decimal").isFloat();
+        req.assert("pagamento.moeda", "Moeda é obrigatória e deve ter 3 caracteres").len(3,3);
 
         var erros = req.validationErrors();
     
